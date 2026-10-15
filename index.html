@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENEM e Futuro | Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="cabecalho">
+      <span class="etiqueta">QUIZ INTERATIVO</span>
+      <h1>ENEM e Futuro</h1>
+      <p>
+        Descubra como você encara o ENEM, a tecnologia
+        e as possibilidades para o seu futuro.
+      </p>
+    </header>
+
+    <section class="quiz" id="quiz">
+      <div class="progresso">
+        <span id="contador">Pergunta 1 de 5</span>
+        <span id="porcentagem">20%</span>
+      </div>
+
+      <div class="barra">
+        <div id="barraProgresso"></div>
+      </div>
+
+      <h2 id="pergunta">Carregando pergunta...</h2>
+
+      <div id="alternativas" class="alternativas"></div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+
+      <button id="botaoProximo" class="botao" disabled>
+        Próxima pergunta
+      </button>
+    </section>
+
+    <section id="resultado" class="resultado" hidden>
+      <span class="etiqueta">SEU RESULTADO</span>
+      <h2 id="tituloResultado"></h2>
+      <p id="textoResultado"></p>
+
+      <div class="resumo">
+        <h3>O que suas respostas revelam?</h3>
+        <p id="detalhesResultado"></p>
+      </div>
+
+      <button id="botaoReiniciar" class="botao">
+        Refazer quiz
+      </button>
+    </section>
+
+    <footer>
+      <p>Seu futuro começa com as escolhas de hoje.</p>
+    </footer>
+  </main>
+</body>
+</html>
